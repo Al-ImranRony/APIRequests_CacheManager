@@ -2,7 +2,7 @@
 //  APIManager.swift
 //  ConcurrentAPICaller
 //
-//  Created by Bitmorpher 4 on 8/27/23.
+//  Created by iMrn on 8/27/23.
 //
 
 import Foundation
@@ -57,7 +57,7 @@ class APIManager {
                         throw NSError(domain: "Error", code: 500)
                     }
                     
-                    return 
+                    return
                 }
                 .sink { [weak self] completion in
                     switch completion {

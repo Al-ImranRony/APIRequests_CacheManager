@@ -2,7 +2,7 @@
 //  UserDefaultsManager.swift
 //  ConcurrentAPICaller
 //
-//  Created by Bitmorpher 4 on 8/30/23.
+//  Created by iMrn on 8/30/23.
 //
 
 import Foundation
@@ -28,7 +28,6 @@ class UserDefaultsManager {
     func setAPIRequestTags(tags: [Int]) {
         defaults.set(tags, forKey: UserDefaultOperation.requestCounterKey.rawValue)
         defaults.synchronize()
-        print("Stored Array check: \(tags)")
     }
     
     func getAPIRequestTags() -> Array<Int> {

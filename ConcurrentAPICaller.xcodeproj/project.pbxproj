@@ -32,6 +32,7 @@
 		2D4E89DC2A9C9E8000C17220 /* APIRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4E89DB2A9C9E8000C17220 /* APIRequestHandler.swift */; };
 		2D4E89DE2A9CB44900C17220 /* APIRequestInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4E89DD2A9CB44900C17220 /* APIRequestInfo.swift */; };
 		68346AA6CEDA7DAD71EF43A7 /* Pods_ConcurrentAPICaller_ConcurrentAPICallerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53776D922E1425961254FF15 /* Pods_ConcurrentAPICaller_ConcurrentAPICallerUITests.framework */; };
+		B3B28DFE2ACA98A500AE53B3 /* APICallerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B28DFD2ACA98A500AE53B3 /* APICallerViewModel.swift */; };
 		FC8B163BBE8D339B2345EBCF /* Pods_ConcurrentAPICallerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BC4497555F1B96E5E821C3B /* Pods_ConcurrentAPICallerTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +83,7 @@
 		2D4E89DB2A9C9E8000C17220 /* APIRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestHandler.swift; sourceTree = "<group>"; };
 		2D4E89DD2A9CB44900C17220 /* APIRequestInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestInfo.swift; sourceTree = "<group>"; };
 		53776D922E1425961254FF15 /* Pods_ConcurrentAPICaller_ConcurrentAPICallerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConcurrentAPICaller_ConcurrentAPICallerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3B28DFD2ACA98A500AE53B3 /* APICallerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICallerViewModel.swift; sourceTree = "<group>"; };
 		B5BC3F18F93B4E6BD4DD129D /* Pods-ConcurrentAPICallerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConcurrentAPICallerTests.release.xcconfig"; path = "Target Support Files/Pods-ConcurrentAPICallerTests/Pods-ConcurrentAPICallerTests.release.xcconfig"; sourceTree = "<group>"; };
 		BC6D2046C0830001A61A465F /* Pods-ConcurrentAPICaller.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConcurrentAPICaller.release.xcconfig"; path = "Target Support Files/Pods-ConcurrentAPICaller/Pods-ConcurrentAPICaller.release.xcconfig"; sourceTree = "<group>"; };
 		EAAD0DF0F294C03F71F17850 /* Pods-ConcurrentAPICallerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConcurrentAPICallerTests.debug.xcconfig"; path = "Target Support Files/Pods-ConcurrentAPICallerTests/Pods-ConcurrentAPICallerTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -178,13 +180,13 @@
 		2D2B7B672A9B213F009D8D7D /* ConcurrentAPICaller */ = {
 			isa = PBXGroup;
 			children = (
+				B3B28DFC2ACA983900AE53B3 /* View */,
 				2D2B7B9D2A9B31C4009D8D7D /* Model */,
-				2D2A4B782A9F14BB00B87A72 /* CallerViewController.swift */,
+				B3B28DFD2ACA98A500AE53B3 /* APICallerViewModel.swift */,
 				2D2A4B6E2A9F0B7300B87A72 /* Additionals */,
 				2D4E89DA2A9C9E1E00C17220 /* Helpers */,
 				2D49364F2A9DB3DE00227AF6 /* Databse */,
 				2D2B7B682A9B213F009D8D7D /* AppDelegate.swift */,
-				2D2B7B6C2A9B213F009D8D7D /* ViewController.swift */,
 				2D2B7B6A2A9B213F009D8D7D /* SceneDelegate.swift */,
 				2D2B7B6E2A9B213F009D8D7D /* Main.storyboard */,
 				2D2B7B712A9B2140009D8D7D /* Assets.xcassets */,
@@ -238,6 +240,15 @@
 				2D2A4B702A9F0C2100B87A72 /* UserDefaultsManager.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B3B28DFC2ACA983900AE53B3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2D2B7B6C2A9B213F009D8D7D /* ViewController.swift */,
+				2D2A4B782A9F14BB00B87A72 /* CallerViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		EB58121E45FD16D03EA65329 /* Pods */ = {
@@ -504,6 +515,7 @@
 				2D2B7B692A9B213F009D8D7D /* AppDelegate.swift in Sources */,
 				2D2B7B6B2A9B213F009D8D7D /* SceneDelegate.swift in Sources */,
 				2D2B7B9F2A9B31D8009D8D7D /* Event.swift in Sources */,
+				B3B28DFE2ACA98A500AE53B3 /* APICallerViewModel.swift in Sources */,
 				2D4936522A9DB41500227AF6 /* APIRequestInfo+CoreDataClass.swift in Sources */,
 				2D4E89DC2A9C9E8000C17220 /* APIRequestHandler.swift in Sources */,
 				2D4936572A9DE01A00227AF6 /* Parameters.swift in Sources */,
